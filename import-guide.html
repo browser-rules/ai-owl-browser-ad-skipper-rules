@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Import AI Owl Browser Ad Skipper Rule JSON</title>
+    <meta
+      name="description"
+      content="Step-by-step guide for importing the AI Owl Browser Ad Skipper JSON rule subscription URL into Browser and enabling local-only screen automation."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/import-guide.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container page-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">AI Owl Browser Automation Rules</a>
+        <span>/</span>
+        <span>Import guide</span>
+      </nav>
+      <article class="card article-card">
+        <h1 class="article-title">How to Import AI Owl Browser Ad Skipper Rule JSON</h1>
+        <p class="article-lead">
+          The recommended setup is to import the rule subscription URL. A URL subscription is easier
+          to copy, easier to refresh, and avoids forcing users to download and manually select a JSON
+          file.
+        </p>
+        <div class="code-box" aria-label="Rule JSON subscription URL">
+          <span id="ruleUrl" class="code-text">https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/browser-ad-skipper-rules.json</span>
+          <button id="copyRuleUrlPrimary" class="copy-btn" type="button">
+            <span id="copyPrimaryLabel">Copy Rule URL</span>
+          </button>
+        </div>
+        <section class="timeline article-timeline" aria-label="Import steps">
+          <article class="timeline-item">
+            <span class="step-num">1</span>
+            <div>
+              <h2>Copy the JSON rule subscription URL</h2>
+              <p>Use the copy button above. Downloading the JSON file is only a fallback.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="step-num">2</span>
+            <div>
+              <h2>Open Browser and switch to Ad Skipper</h2>
+              <p>Use Browser's Ad Skipper tab and open the import configuration entry.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="step-num">3</span>
+            <div>
+              <h2>Paste the subscription URL</h2>
+              <p>Browser downloads the rule JSON, checks the rule format, and shows imported rules.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="step-num">4</span>
+            <div>
+              <h2>Review, edit, and enable</h2>
+              <p>
+                Imported rules remain user-managed. You can edit, disable, remove, or update rules
+                before enabling local automation.
+              </p>
+            </div>
+          </article>
+        </section>
+      </article>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>
