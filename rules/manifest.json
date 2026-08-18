@@ -1,0 +1,9 @@
+{
+  "id": "browser-ad-skipper-rules",
+  "name": "Browser Ad Skipper Rules",
+  "version": 2,
+  "updatedAt": "2026-08-19T00:00:00.000Z",
+  "ruleUrl": "https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/browser-ad-skipper-rules.json",
+  "sha256": "ceae1d73cb0ea4ddc6c984711db3ef9bdef7bd6029f22215c962e3e5b2191173",
+  "bytes": 369274
+}
