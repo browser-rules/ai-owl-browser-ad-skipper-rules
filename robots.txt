@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/sitemap.xml
