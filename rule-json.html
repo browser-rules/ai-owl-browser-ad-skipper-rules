@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Owl Browser Ad Skipper Rule JSON Format</title>
+    <meta
+      name="description"
+      content="Overview of the AI Owl Browser Ad Skipper rule JSON subscription format, manifest metadata, import URL, and user-managed automation rule structure."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rule-json.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container page-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">AI Owl Browser Automation Rules</a>
+        <span>/</span>
+        <span>Rule JSON</span>
+      </nav>
+      <article class="card article-card">
+        <h1 class="article-title">Rule JSON Format</h1>
+        <p class="article-lead">
+          The public subscription is a JSON document that Browser can fetch, validate, and import
+          into the local Ad Skipper rule manager.
+        </p>
+        <div class="file-list article-files">
+          <div class="file-item">
+            <div class="file-info"><span>Rule subscription</span></div>
+            <a class="file-link" id="openRuleJson" href="rules/browser-ad-skipper-rules.json">
+              /rules/browser-ad-skipper-rules.json
+            </a>
+          </div>
+          <div class="file-item">
+            <div class="file-info"><span>Manifest metadata</span></div>
+            <a class="file-link" href="rules/manifest.json">/rules/manifest.json</a>
+          </div>
+        </div>
+        <section class="article-section">
+          <h2>What the JSON provides</h2>
+          <p>
+            The JSON contains rule subscription metadata and user-managed automation entries. Browser
+            decides whether a rule is valid, visible in the rule manager, and eligible for local
+            execution after the user enables Ad Skipper.
+          </p>
+        </section>
+        <section class="article-section">
+          <h2>Recommended import URL</h2>
+          <p>
+            Use the hosted URL instead of a downloaded file when possible. A stable URL gives users
+            a repeatable source for future refreshes.
+          </p>
+        </section>
+      </article>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>
