@@ -9,3 +9,38 @@
     <lastmod>2026-08-18</lastmod>
   </url>
 </urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/import-guide.html</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/privacy.html</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rule-json.html</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/faq.html</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/zh-cn.html</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/browser-ad-skipper-rules.json</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/manifest.json</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+</urlset>
