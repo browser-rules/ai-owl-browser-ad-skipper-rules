@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Owl Browser Ad Skipper Automation Rules FAQ</title>
+    <meta
+      name="description"
+      content="Frequently asked questions about AI Owl Browser Ad Skipper rule subscriptions, JSON import, local-only automation, permissions, updates, and manual downloads."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/faq.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I import the Browser Ad Skipper rule JSON?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Copy the public rule subscription URL, open Browser, switch to Ad Skipper, choose import configuration, paste the URL, and confirm the user-managed rules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Browser upload screen content when using Ad Skipper rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Browser evaluates imported automation rules locally on the device. Screen content, app data, rule matches, and personal information are not uploaded to this site."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <main class="container page-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">AI Owl Browser Automation Rules</a>
+        <span>/</span>
+        <span>FAQ</span>
+      </nav>
+      <article class="card article-card">
+        <h1 class="article-title">FAQ</h1>
+        <div class="faq-list">
+          <details open>
+            <summary>How do I import the Browser Ad Skipper rule JSON?</summary>
+            <p>Copy the subscription URL, open Browser's Ad Skipper tab, paste the URL, and confirm.</p>
+          </details>
+          <details>
+            <summary>Do I need to download the JSON file?</summary>
+            <p>No. Copying the URL is the primary path. Downloading is only a manual fallback.</p>
+          </details>
+          <details>
+            <summary>Can I edit imported rules?</summary>
+            <p>Yes. Imported rules remain visible and editable in Browser's rule management UI.</p>
+          </details>
+          <details>
+            <summary>Why does automation require accessibility permission?</summary>
+            <p>The local service needs accessibility permission before Browser can perform supported actions.</p>
+          </details>
+          <details>
+            <summary>Does this page activate Ad Skipper?</summary>
+            <p>No. This site only hosts JSON rules. Browser users must import and enable rules themselves.</p>
+          </details>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
