@@ -2,17 +2,10 @@
   "schemaVersion": 1,
   "id": "browser-ad-skipper-rules",
   "name": "Browser Ad Skipper Rules",
-  "version": 2,
+  "version": 6,
   "author": "Browser",
   "updateUrl": "",
   "supportUri": "",
-  "source": [
-    "Browser ad skipper rules externalized on 2026-08-05",
-    "Import this JSON manually to enable the previously built-in Browser ad skipping behavior",
-    "Browser APK does not package this rule file as an asset",
-    "Multilingual text labels expanded from public ad/app UI patterns and common Google Ads supported languages on 2026-08-05",
-    "YouTube and YouTube Music skip-ad text fallbacks expanded across common UI languages on 2026-08-05"
-  ],
   "appRules": [
     {
       "packageName": "com.google.android.youtube",
@@ -4490,6 +4483,8 @@
       "idHints": [
         "applovin",
         "al_close",
+        "skipBtn",
+        "skip_btn",
         "applovin_close_button",
         "inter_applovin",
         "rewarded_close",
@@ -4937,7 +4932,9 @@
         "watch an ad"
       ],
       "activityHints": [
-        "com.applovin.adview.AppLovinFullscreenActivity"
+        "com.applovin.adview.AppLovinFullscreenActivity",
+        "com.applovin.adview.AppLovinInterstitialActivity",
+        "com.applovin.sdk.AppLovinWebViewActivity"
       ]
     },
     {
@@ -5402,7 +5399,10 @@
       ],
       "activityHints": [
         "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
-        "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity"
+        "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity",
+        "com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity",
+        "com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity",
+        "com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity"
       ]
     },
     {
@@ -6322,7 +6322,12 @@
       ],
       "activityHints": [
         "unityads",
-        "unity3d"
+        "unity3d",
+        "com.unity3d.services.ads.adunit.AdUnitActivity",
+        "com.unity3d.services.ads.adunit.AdUnitTransparentActivity",
+        "com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity",
+        "com.unity3d.services.ads.adunit.AdUnitSoftwareActivity",
+        "com.unity3d.ads.adplayer.FullScreenWebViewDisplay"
       ]
     },
     {
@@ -6787,7 +6792,8 @@
         "vungle_close",
         "close_container",
         "dismiss_button",
-        "liftoff"
+        "liftoff",
+        "next-button"
       ],
       "actionKeywords": [
         "close",
@@ -7221,7 +7227,8 @@
         "Simulan",
         "Devam et",
         "Aç",
-        "Başla"
+        "Başla",
+        "Close button"
       ],
       "contextKeywords": [
         "vungle",
@@ -7233,7 +7240,11 @@
         "广告"
       ],
       "activityHints": [
-        "com.vungle.ads.internal.ui.VungleActivity"
+        "com.vungle.ads.internal.ui.VungleActivity",
+        "com.vungle.warren.ui.VungleActivity",
+        "com.vungle.warren.ui.VungleFlexViewActivity",
+        "com.vungle.publisher.VideoFullScreenAdActivity",
+        "com.vungle.publisher.MraidFullScreenAdActivity"
       ]
     },
     {
@@ -7688,7 +7699,9 @@
         "facebook",
         "meta"
       ],
-      "activityHints": []
+      "activityHints": [
+        "com.facebook.ads.AudienceNetworkActivity"
+      ]
     },
     {
       "name": "Kuaishou",
@@ -11773,7 +11786,12 @@
       "enabled": true,
       "idHints": [
         "inmobi-ad",
-        "inmobi"
+        "inmobi",
+        "inmobi_close_img",
+        "endcard_skip_all_btn",
+        "skipBtnImg",
+        "ecCloseBtn",
+        "closeBtnImg"
       ],
       "actionKeywords": [
         "close",
@@ -12213,7 +12231,9 @@
         "com.inmobi",
         "advertisement"
       ],
-      "activityHints": []
+      "activityHints": [
+        "com.inmobi.ads.rendering.InMobiAdActivity"
+      ]
     },
     {
       "name": "TradPlus",
@@ -12676,18 +12696,28 @@
       "tt_reward_full_end_close",
       "al_close_button",
       "al_btn_close",
+      "skipBtn",
       "applovin_interstitial_close_button",
       "mbridge_vfpv_close",
       "mbridge_reward_endcard_close_iv",
       "mbridge_reward_end_close_iv",
       "mbridge_bt_close",
       "vungle_header_close",
-      "vungle_close_btn"
+      "vungle_close_btn",
+      "next-button",
+      "inmobi_close_img",
+      "endcard_skip_all_btn",
+      "skipBtnImg",
+      "ecCloseBtn",
+      "closeBtnImg"
     ],
     "sdkActivityHints": [
       "com.google.android.gms.ads.AdActivity",
       "com.vungle.warren.ui.VungleActivity",
+      "com.vungle.warren.ui.VungleFlexViewActivity",
       "com.vungle.ads.internal.ui.VungleActivity",
+      "com.vungle.publisher.VideoFullScreenAdActivity",
+      "com.vungle.publisher.MraidFullScreenAdActivity",
       "com.applovin.adview.AppLovinFullscreenActivity",
       "com.applovin.adview.AppLovinInterstitialActivity",
       "com.applovin.sdk.AppLovinWebViewActivity",
@@ -12696,9 +12726,28 @@
       "com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity",
       "com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity",
       "com.unity3d.services.ads.adunit.AdUnitActivity",
+      "com.unity3d.services.ads.adunit.AdUnitTransparentActivity",
+      "com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity",
+      "com.unity3d.services.ads.adunit.AdUnitSoftwareActivity",
       "com.mbridge.msdk.reward.player.MBRewardVideoActivity",
       "com.facebook.ads.AudienceNetworkActivity",
-      "com.inmobi.ads.rendering.InMobiAdActivity"
+      "com.inmobi.ads.rendering.InMobiAdActivity",
+      "com.unity3d.ads.adplayer.FullScreenWebViewDisplay",
+      "com.ironsource.sdk.controller.ControllerActivity",
+      "com.ironsource.sdk.controller.InterstitialActivity",
+      "com.ironsource.sdk.controller.OpenUrlActivity",
+      "com.chartboost.sdk.CBImpressionActivity",
+      "com.startapp.android.publish.OverlayActivity",
+      "com.tapjoy.TJAdUnitActivity",
+      "com.tapjoy.TJContentActivity",
+      "com.tapjoy.TJWebViewActivity",
+      "com.appodeal.ads.InterstitialActivity",
+      "com.appodeal.ads.VideoActivity",
+      "com.appodeal.ads.VideoPlayerActivity",
+      "com.adcolony.sdk.AdColonyInterstitialActivity",
+      "com.moloco.sdk",
+      "com.tappx.sdk.android.InterstitialAdActivity",
+      "com.sas.ia.android.sdk.InterstitialWebActivity"
     ],
     "sdkContextHints": [
       "admob",
@@ -12716,7 +12765,19 @@
       "unity_ads",
       "facebook.ads",
       "audience_network",
-      "inmobi"
+      "inmobi",
+      "unity3d",
+      "chartboost",
+      "startapp",
+      "tapjoy",
+      "fyber",
+      "fairbid",
+      "digital_turbine",
+      "appodeal",
+      "adcolony",
+      "moloco",
+      "tappx",
+      "sas.ia"
     ],
     "sdkResourcePackageHints": [
       "com.google.android.gms",
@@ -12730,6 +12791,17 @@
       "com.unity3d",
       "com.ironsource",
       "com.inmobi",
+      "com.chartboost",
+      "com.startapp",
+      "com.tapjoy",
+      "com.fyber",
+      "com.digitalturbine",
+      "com.inneractive",
+      "com.appodeal",
+      "com.adcolony",
+      "com.moloco.sdk",
+      "com.tappx",
+      "com.sas.ia.android.sdk",
       "com.tradplus",
       "com.tradplus.ads",
       "com.anythink",
@@ -13168,7 +13240,8 @@
       "Simulan",
       "Devam et",
       "Aç",
-      "Başla"
+      "Başla",
+      "Close button"
     ],
     "activityBoundTextRegexes": [
       "^(Skip|Close|Omitir|Pular|Passer|Schließen|تخطي|跳过|跳過|关闭|關閉).*\\d+.*"
@@ -13382,12 +13455,15 @@
       "বিজ্ঞাপন এড়িয়ে যান",
       "اشتہار چھوڑیں",
       "விளம்பரத்தை தவிர்",
-      "ప్రకటన దాటవేయి"
+      "ప్రకటన దాటవేయి",
+      "Close button"
     ],
     "activityBoundExactViewIds": [
       "close_button",
       "skip_button",
-      "btn_close"
+      "btn_close",
+      "skipBtn",
+      "next-button"
     ],
     "closeSymbols": [
       "✕",
