@@ -12,6 +12,7 @@ const localeOptions = [
   { code: "pt", label: "Português" },
   { code: "ja", label: "日本語" },
   { code: "ko", label: "한국어" },
+  { code: "zh-TW", label: "繁體中文" },
 ];
 
 const rtlLocales = new Set(["ar", "ur"]);
@@ -27,7 +28,7 @@ const messages = {
     "nav.faq": "FAQ",
     "action.copy": "Copy",
     "action.copied": "Copied",
-    "action.copyRuleUrl": "Copy Rule URL",
+    "action.copyRuleUrl": "Copy link to import rules",
     "action.openJson": "Open JSON",
     "action.downloadFallback": "Download fallback",
     "home.badge": "Public JSON Rule Subscription",
@@ -44,7 +45,7 @@ const messages = {
     "home.findTitle": "Find This Rule Subscription",
     "home.findBody": "Search for Blink Browser Ad Skipper Automation Rules. Related phrases include Blink Browser rule JSON, Blink Browser Ad Skipper rule subscription, and Blink Browser local automation rules.",
     "home.directTitle": "Direct subscription",
-    "home.directBody": "Copy the JSON URL from the top of this page and paste it into Blink Browser.",
+    "home.directBody": "After copying, return to Blink Browser to import the rule link.",
     "home.docsTitle": "Documentation pages",
     "home.docsBody": "Import, privacy, rule format, and FAQ pages give search engines clear topics.",
     "home.githubTitle": "GitHub mirror",
@@ -108,7 +109,7 @@ const localeOverrides = {
     "nav.rule": "नियम फ़ॉर्मेट",
     "action.copy": "कॉपी करें",
     "action.copied": "कॉपी हो गया",
-    "action.copyRuleUrl": "नियम URL कॉपी करें",
+    "action.copyRuleUrl": "आयात के लिए नियम लिंक कॉपी करें",
     "action.openJson": "JSON खोलें",
     "action.downloadFallback": "फ़ॉलबैक डाउनलोड",
     "home.badge": "सार्वजनिक JSON नियम सदस्यता",
@@ -122,7 +123,7 @@ const localeOverrides = {
     "home.findTitle": "इस नियम सदस्यता को खोजें",
     "home.findBody": "सटीक शीर्षक Blink Browser Ad Skipper Automation Rules खोजें। Related phrases: Blink Browser rule JSON, Blink Browser Ad Skipper rule subscription, और Blink Browser local automation rules.",
     "home.directTitle": "सीधा subscription",
-    "home.directBody": "इस पेज के ऊपर से JSON URL कॉपी करके Blink Browser में पेस्ट करें।",
+    "home.directBody": "कॉपी करने के बाद नियम लिंक आयात करने के लिए Blink Browser में लौटें।",
     "home.docsBody": "Import, privacy, rule format और FAQ pages search engines को स्पष्ट topics देते हैं।",
     "home.githubBody": "यही rules यहां mirror हैं",
     "home.docImportTitle": "Rule JSON कैसे import करें",
@@ -165,7 +166,7 @@ const localeOverrides = {
     "nav.faq": "FAQ",
     "action.copy": "کاپی کریں",
     "action.copied": "کاپی ہو گیا",
-    "action.copyRuleUrl": "رول URL کاپی کریں",
+    "action.copyRuleUrl": "درآمد کے لیے قواعد کا لنک کاپی کریں",
     "action.openJson": "JSON کھولیں",
     "action.downloadFallback": "ڈاؤن لوڈ fallback",
     "home.badge": "Public JSON rule subscription",
@@ -175,7 +176,7 @@ const localeOverrides = {
     "home.factProcessingValue": "صرف device پر local",
     "home.findTitle": "یہ rule subscription تلاش کریں",
     "home.findBody": "Exact title Blink Browser Ad Skipper Automation Rules تلاش کریں۔ Related phrases: Blink Browser rule JSON, Blink Browser Ad Skipper rule subscription, اور Blink Browser local automation rules.",
-    "home.directBody": "اس page کے اوپر سے JSON URL copy کر کے Blink Browser میں paste کریں۔",
+    "home.directBody": "کاپی کرنے کے بعد قواعد کا لنک درآمد کرنے کے لیے Blink Browser میں واپس جائیں۔",
     "home.githubBody": "یہی rules یہاں mirror ہیں",
     "import.title": "Blink Browser Ad Skipper Rule JSON کیسے import کریں",
     "import.lead": "Recommended setup rule subscription URL import کرنا ہے۔ URL subscription copy اور refresh کرنا آسان ہے، اور user کو JSON file download کر کے manually select نہیں کرنا پڑتا۔",
@@ -193,7 +194,7 @@ const localeOverrides = {
     "nav.rule": "রুল ফরম্যাট",
     "action.copy": "কপি করুন",
     "action.copied": "কপি হয়েছে",
-    "action.copyRuleUrl": "রুল URL কপি করুন",
+    "action.copyRuleUrl": "আমদানির জন্য নিয়মের লিংক কপি করুন",
     "action.openJson": "JSON খুলুন",
     "action.downloadFallback": "Fallback ডাউনলোড",
     "home.badge": "Public JSON rule subscription",
@@ -203,7 +204,7 @@ const localeOverrides = {
     "home.factProcessingValue": "শুধু device-এ local",
     "home.findTitle": "এই rule subscription খুঁজুন",
     "home.findBody": "Exact title Blink Browser Ad Skipper Automation Rules সার্চ করুন। Related phrases: Blink Browser rule JSON, Blink Browser Ad Skipper rule subscription, Blink Browser local automation rules.",
-    "home.directBody": "এই page-এর উপরের JSON URL copy করে Blink Browser-এ paste করুন।",
+    "home.directBody": "কপি করার পর নিয়মের লিংক আমদানি করতে Blink Browser-এ ফিরে যান।",
     "home.docsBody": "Import, privacy, rule format এবং FAQ pages search engines-কে পরিষ্কার topics দেয়।",
     "import.title": "Blink Browser Ad Skipper Rule JSON ইমপোর্ট করার পদ্ধতি",
     "import.lead": "Recommended setup হলো rule subscription URL import করা। URL subscription copy ও refresh করা সহজ, এবং user-কে JSON file download করে manually select করতে হয় না।",
@@ -223,7 +224,7 @@ const localeOverrides = {
     "nav.faq": "الأسئلة الشائعة",
     "action.copy": "نسخ",
     "action.copied": "تم النسخ",
-    "action.copyRuleUrl": "نسخ رابط القواعد",
+    "action.copyRuleUrl": "انسخ رابط القواعد لاستيرادها",
     "action.openJson": "فتح JSON",
     "action.downloadFallback": "تنزيل احتياطي",
     "home.badge": "اشتراك عام لقواعد JSON",
@@ -236,7 +237,7 @@ const localeOverrides = {
     "home.findTitle": "العثور على اشتراك القواعد",
     "home.findBody": "ابحث عن العنوان الدقيق Blink Browser Ad Skipper Automation Rules. عبارات ذات صلة: Blink Browser rule JSON و Blink Browser Ad Skipper rule subscription و Blink Browser local automation rules.",
     "home.directTitle": "اشتراك مباشر",
-    "home.directBody": "انسخ رابط JSON من أعلى هذه الصفحة والصقه في Blink Browser.",
+    "home.directBody": "بعد النسخ، عد إلى Blink Browser لاستيراد رابط القواعد.",
     "home.docsBody": "صفحات الاستيراد والخصوصية وتنسيق القواعد و FAQ تمنح محركات البحث موضوعات واضحة.",
     "home.githubBody": "القواعد نفسها متاحة أيضا على",
     "home.docTitle": "توثيق القواعد",
@@ -265,7 +266,7 @@ const localeOverrides = {
     "nav.rule": "Format aturan",
     "action.copy": "Salin",
     "action.copied": "Disalin",
-    "action.copyRuleUrl": "Salin URL aturan",
+    "action.copyRuleUrl": "Salin tautan untuk mengimpor aturan",
     "action.openJson": "Buka JSON",
     "action.downloadFallback": "Unduh cadangan",
     "home.badge": "Langganan aturan JSON publik",
@@ -279,7 +280,7 @@ const localeOverrides = {
     "home.findTitle": "Temukan Langganan Aturan Ini",
     "home.findBody": "Cari judul persis Blink Browser Ad Skipper Automation Rules. Frasa terkait: Blink Browser rule JSON, Blink Browser Ad Skipper rule subscription, dan Blink Browser local automation rules.",
     "home.directTitle": "Langganan langsung",
-    "home.directBody": "Salin URL JSON dari bagian atas halaman ini dan tempelkan ke Blink Browser.",
+    "home.directBody": "Setelah menyalin, kembali ke Blink Browser untuk mengimpor tautan aturan.",
     "home.docsBody": "Halaman impor, privasi, format aturan, dan FAQ memberi topik yang jelas untuk mesin pencari.",
     "home.githubBody": "Aturan yang sama juga dicerminkan di",
     "import.title": "Cara Mengimpor Blink Browser Ad Skipper Rule JSON",
@@ -297,14 +298,14 @@ const localeOverrides = {
     "nav.import": "Panduan import",
     "action.copy": "Salin",
     "action.copied": "Disalin",
-    "action.copyRuleUrl": "Salin URL peraturan",
+    "action.copyRuleUrl": "Salin pautan untuk import peraturan",
     "action.openJson": "Buka JSON",
     "action.downloadFallback": "Muat turun sandaran",
     "home.badge": "Langganan peraturan JSON awam",
     "home.subtitle": "Salin satu URL langganan peraturan awam, tampal ke dialog import Ad Skipper dalam Blink Browser, dan biarkan Blink Browser membantu menyelesaikan tindakan skip, close, dismiss dan consent yang berulang secara setempat pada peranti anda. Peraturan diurus pengguna dan tiada kandungan skrin atau maklumat peribadi dimuat naik ke cloud.",
     "home.ruleTitle": "Salin URL Peraturan",
     "home.factProcessingValue": "Setempat sahaja pada peranti",
-    "home.directBody": "Salin URL JSON dari bahagian atas halaman ini dan tampal ke Blink Browser.",
+    "home.directBody": "Selepas menyalin, kembali ke Blink Browser untuk mengimport pautan peraturan.",
     "import.title": "Cara Mengimport Blink Browser Ad Skipper Rule JSON",
     "import.lead": "Persediaan yang disyorkan ialah mengimport URL langganan peraturan. Langganan URL lebih mudah disalin dan disegar semula, serta tidak memaksa pengguna memuat turun dan memilih fail JSON secara manual.",
     "privacy.title": "Privasi dan Automation Setempat",
@@ -317,7 +318,7 @@ const localeOverrides = {
     "nav.rule": "Format des règles",
     "action.copy": "Copier",
     "action.copied": "Copié",
-    "action.copyRuleUrl": "Copier l'URL des règles",
+    "action.copyRuleUrl": "Copier le lien pour importer les règles",
     "action.openJson": "Ouvrir JSON",
     "action.downloadFallback": "Téléchargement de secours",
     "home.badge": "Abonnement public aux règles JSON",
@@ -326,7 +327,7 @@ const localeOverrides = {
     "home.ruleBody": "Cette URL est la méthode d'import principale. Blink Browser récupère l'abonnement JSON, valide le schema et garde les règles d'automation importées modifiables dans le gestionnaire de règles Ad Skipper.",
     "home.findTitle": "Retrouver cet abonnement",
     "home.directTitle": "Abonnement direct",
-    "home.directBody": "Copiez l'URL JSON en haut de cette page et collez-la dans Blink Browser.",
+    "home.directBody": "Après la copie, revenez dans Blink Browser pour importer le lien des règles.",
     "home.docsTitle": "Pages de documentation",
     "home.docsBody": "Les pages import, confidentialité, format des règles et FAQ donnent des sujets clairs aux moteurs de recherche.",
     "home.githubTitle": "Miroir GitHub",
@@ -352,7 +353,7 @@ const localeOverrides = {
     "nav.rule": "Regelformat",
     "action.copy": "Kopieren",
     "action.copied": "Kopiert",
-    "action.copyRuleUrl": "Regel-URL kopieren",
+    "action.copyRuleUrl": "Link zum Regelimport kopieren",
     "action.openJson": "JSON öffnen",
     "action.downloadFallback": "Fallback herunterladen",
     "home.badge": "Öffentliches JSON-Regelabonnement",
@@ -361,7 +362,7 @@ const localeOverrides = {
     "home.ruleBody": "Diese URL ist der primäre Importweg. Blink Browser lädt das JSON-Abonnement, validiert das Schema und hält importierte Automationsregeln im Ad-Skipper-Regelmanager editierbar.",
     "home.findTitle": "Dieses Regelabonnement finden",
     "home.directTitle": "Direktes Abonnement",
-    "home.directBody": "Kopieren Sie die JSON-URL oben auf dieser Seite und fügen Sie sie in Blink Browser ein.",
+    "home.directBody": "Kehren Sie nach dem Kopieren zu Blink Browser zurück, um den Regellink zu importieren.",
     "home.docsTitle": "Dokumentationsseiten",
     "home.docsBody": "Import-, Datenschutz-, Regelformat- und FAQ-Seiten geben Suchmaschinen klare Themen.",
     "home.githubTitle": "GitHub-Spiegel",
@@ -378,7 +379,7 @@ const localeOverrides = {
     "nav.rule": "Formato de reglas",
     "action.copy": "Copiar",
     "action.copied": "Copiado",
-    "action.copyRuleUrl": "Copiar URL de reglas",
+    "action.copyRuleUrl": "Copiar enlace para importar reglas",
     "action.openJson": "Abrir JSON",
     "action.downloadFallback": "Descarga alternativa",
     "home.badge": "Suscripción pública de reglas JSON",
@@ -386,7 +387,7 @@ const localeOverrides = {
     "home.ruleTitle": "Copiar la URL de reglas",
     "home.findTitle": "Encontrar esta suscripción",
     "home.directTitle": "Suscripción directa",
-    "home.directBody": "Copia la URL JSON de la parte superior de esta página y pégala en Blink Browser.",
+    "home.directBody": "Después de copiarlo, vuelve a Blink Browser para importar el enlace de reglas.",
     "home.docsTitle": "Páginas de documentación",
     "home.docsBody": "Las páginas de importación, privacidad, formato de reglas y FAQ dan temas claros a los motores de búsqueda.",
     "home.githubTitle": "Espejo de GitHub",
@@ -403,7 +404,7 @@ const localeOverrides = {
     "nav.rule": "Formato das regras",
     "action.copy": "Copiar",
     "action.copied": "Copiado",
-    "action.copyRuleUrl": "Copiar URL das regras",
+    "action.copyRuleUrl": "Copiar link para importar regras",
     "action.openJson": "Abrir JSON",
     "action.downloadFallback": "Download alternativo",
     "home.badge": "Assinatura pública de regras JSON",
@@ -411,7 +412,7 @@ const localeOverrides = {
     "home.ruleTitle": "Copiar URL das regras",
     "home.findTitle": "Encontrar esta assinatura",
     "home.directTitle": "Assinatura direta",
-    "home.directBody": "Copie a URL JSON no topo desta página e cole no Blink Browser.",
+    "home.directBody": "Depois de copiar, volte ao Blink Browser para importar o link das regras.",
     "home.docsTitle": "Páginas de documentação",
     "home.docsBody": "As páginas de importação, privacidade, formato das regras e FAQ fornecem tópicos claros para os mecanismos de busca.",
     "home.githubTitle": "Espelho no GitHub",
@@ -428,7 +429,7 @@ const localeOverrides = {
     "nav.rule": "ルール形式",
     "action.copy": "コピー",
     "action.copied": "コピー済み",
-    "action.copyRuleUrl": "ルール URL をコピー",
+    "action.copyRuleUrl": "インポート用のルールリンクをコピー",
     "action.openJson": "JSON を開く",
     "action.downloadFallback": "予備ダウンロード",
     "home.badge": "公開 JSON ルール購読",
@@ -437,7 +438,7 @@ const localeOverrides = {
     "home.ruleBody": "この URL が主要なインポート方法です。Blink Browser は JSON 購読を取得し、schema を検証し、インポートした automation rules を Ad Skipper のルール管理で編集可能に保ちます。",
     "home.findTitle": "このルール購読を探す",
     "home.directTitle": "直接購読",
-    "home.directBody": "このページ上部の JSON URL をコピーして Blink Browser に貼り付けます。",
+    "home.directBody": "コピー後、Blink Browser に戻ってルールのリンクをインポートしてください。",
     "home.docsTitle": "ドキュメントページ",
     "home.docsBody": "インポート、プライバシー、ルール形式、FAQ ページが検索エンジンに明確なトピックを提供します。",
     "home.githubTitle": "GitHub ミラー",
@@ -458,7 +459,7 @@ const localeOverrides = {
     "nav.rule": "규칙 형식",
     "action.copy": "복사",
     "action.copied": "복사됨",
-    "action.copyRuleUrl": "규칙 URL 복사",
+    "action.copyRuleUrl": "가져올 규칙 링크 복사",
     "action.openJson": "JSON 열기",
     "action.downloadFallback": "대체 다운로드",
     "home.badge": "공개 JSON 규칙 구독",
@@ -467,7 +468,7 @@ const localeOverrides = {
     "home.ruleBody": "이 URL이 기본 가져오기 경로입니다. Blink Browser는 JSON 구독을 가져오고 schema를 검증하며 가져온 automation rules를 Ad Skipper 규칙 관리자에서 편집 가능하게 유지합니다.",
     "home.findTitle": "이 규칙 구독 찾기",
     "home.directTitle": "직접 구독",
-    "home.directBody": "이 페이지 상단의 JSON URL을 복사해 Blink Browser에 붙여 넣으세요.",
+    "home.directBody": "복사한 뒤 Blink Browser로 돌아가 규칙 링크를 가져오세요.",
     "home.docsTitle": "문서 페이지",
     "home.docsBody": "가져오기, 개인정보, 규칙 형식, FAQ 페이지는 검색 엔진에 명확한 주제를 제공합니다.",
     "home.githubTitle": "GitHub 미러",
@@ -963,23 +964,114 @@ for (const [locale, overrides] of Object.entries(completionOverrides)) {
   Object.assign(messages[locale], overrides);
 }
 
-function normalizeLocale(value) {
-  if (!value) return "en";
-  const tag = value.replace("_", "-");
+messages["zh-TW"] = {
+  ...messages.en,
+  "language.label": "語言",
+  "nav.import": "導入指南",
+  "nav.privacy": "隱私",
+  "nav.rule": "規則格式",
+  "nav.faq": "常見問題",
+  "action.copy": "複製",
+  "action.copied": "已複製",
+  "action.copyRuleUrl": "複製連結以導入規則",
+  "action.openJson": "查看 JSON",
+  "action.downloadFallback": "下載備用檔案",
+  "home.badge": "公開 JSON 規則訂閱",
+  "home.title": "Ad Skipper 自動跳廣告規則",
+  "home.subtitle": "YouTube 和 YouTube Music 無需額外規則即可跳廣告。若想涵蓋更多應用與廣告形式，請複製公開規則連結並在 Blink Browser 中導入。",
+  "home.ruleTitle": "規則訂閱連結",
+  "home.ruleBody": "這是主要的導入方式。Blink Browser 會取得 JSON 訂閱、驗證格式，並讓你在 Ad Skipper 規則管理中編輯已導入的規則。",
+  "home.factKeywordLabel": "主要搜尋詞",
+  "home.factKeywordValue": "Blink Browser Ad Skipper Automation Rules",
+  "home.factImportLabel": "導入類型",
+  "home.factImportValue": "JSON 訂閱連結",
+  "home.factProcessingLabel": "處理方式",
+  "home.factProcessingValue": "僅在裝置上執行",
+  "home.findTitle": "搜尋這份規則訂閱",
+  "home.findBody": "搜尋 Blink Browser Ad Skipper Automation Rules，即可再次找到這個頁面。也可以搜尋 Blink Browser rule JSON 或 Blink Browser Ad Skipper rule subscription。",
+  "home.directTitle": "直接訂閱",
+  "home.directBody": "複製規則連結後，返回 Blink Browser 貼上並導入。",
+  "home.docsTitle": "說明文件",
+  "home.docsBody": "查看導入方式、隱私說明、規則格式與常見問題。",
+  "home.githubTitle": "GitHub 備援站",
+  "home.githubBody": "同一份規則也託管在",
+  "home.docTitle": "規則說明",
+  "home.docImportTitle": "如何導入規則 JSON",
+  "home.docImportBody": "複製連結，在 Ad Skipper 中貼上並確認導入。",
+  "home.docPrivacyTitle": "隱私與本機處理",
+  "home.docPrivacyBody": "了解哪些資訊留在裝置上，以及為何需要無障礙權限。",
+  "home.docRuleTitle": "規則 JSON 格式",
+  "home.docRuleBody": "查看訂閱資訊與比對規則的組織方式。",
+  "home.docFaqTitle": "常見問題",
+  "home.docFaqBody": "關於更新、下載、編輯、權限與啟用的解答。",
+  "import.title": "如何導入 Blink Browser Ad Skipper 規則 JSON",
+  "import.lead": "建議直接導入規則訂閱連結，比下載並手動選取 JSON 檔案更簡單，也方便日後更新。",
+  "import.step1Title": "複製 JSON 規則訂閱連結",
+  "import.step1Body": "使用上方的複製按鈕。下載 JSON 檔案僅作為備用方式。",
+  "import.step2Title": "開啟 Blink Browser 並切換至 Ad Skipper",
+  "import.step2Body": "在 Ad Skipper 分頁開啟規則導入入口。",
+  "import.step3Title": "貼上訂閱連結",
+  "import.step3Body": "Blink Browser 會下載規則 JSON、檢查格式並顯示已導入的規則。",
+  "import.step4Title": "檢查、編輯並啟用",
+  "import.step4Body": "導入後仍由你管理規則，可在啟用本機自動化前編輯、停用、移除或更新。",
+  "privacy.title": "隱私與本機自動化",
+  "privacy.lead": "本網站只提供公開的 JSON 規則訂閱。導入規則並啟用 Ad Skipper 後，Blink Browser 會在你的裝置上處理規則。",
+  "privacy.localTitle": "本機比對",
+  "privacy.localBody": "已導入的規則只在安裝 Blink Browser 的裝置上比對。",
+  "privacy.uploadTitle": "不會上傳畫面內容",
+  "privacy.uploadBody": "畫面內容、應用資料、規則命中結果與個人資訊不會上傳。",
+  "privacy.controlTitle": "由你掌控",
+  "privacy.controlBody": "你可以自行決定是否導入、編輯、啟用、停用、更新或移除規則。",
+  "privacy.permissionTitle": "權限要求",
+  "privacy.permissionBody": "自動操作需要裝置上的無障礙服務權限，未授權時不會執行。",
+  "rule.title": "規則 JSON 格式",
+  "rule.lead": "公開訂閱是一份 JSON 文件。Blink Browser 可取得、驗證並導入至本機 Ad Skipper 規則管理。",
+  "rule.subscription": "規則訂閱",
+  "rule.manifest": "訂閱資訊",
+  "rule.providesTitle": "JSON 包含什麼",
+  "rule.providesBody": "JSON 包含訂閱資訊與由使用者管理的自動化規則。Blink Browser 會在你啟用 Ad Skipper 後，判斷規則是否有效、可在管理頁顯示且可在本機執行。",
+  "rule.recommendedTitle": "建議使用的導入連結",
+  "rule.recommendedBody": "建議優先使用線上連結，而非下載檔案。固定連結也方便日後更新規則。",
+  "faq.title": "常見問題",
+  "faq.q1": "如何導入 Blink Browser Ad Skipper 規則 JSON？",
+  "faq.a1": "複製訂閱連結，開啟 Blink Browser 的 Ad Skipper 分頁，貼上連結並確認。",
+  "faq.q2": "需要下載 JSON 檔案嗎？",
+  "faq.a2": "不需要。複製連結是主要方式；下載檔案只是手動導入的備用方式。",
+  "faq.q3": "可以編輯已導入的規則嗎？",
+  "faq.a3": "可以。已導入的規則會顯示在 Blink Browser 的規則管理頁，並可編輯。",
+  "faq.q4": "為何自動化需要無障礙權限？",
+  "faq.a4": "Blink Browser 的本機服務需要無障礙權限，才能執行支援的操作。",
+  "faq.q5": "開啟這個網頁就會啟用 Ad Skipper 嗎？",
+  "faq.a5": "不會。Blink Browser 已內置 YouTube 與 YouTube Music 規則。導入這份 JSON 可加入其他應用和廣告平台的規則。",
+};
+
+function supportedLocale(value) {
+  if (!value) return null;
+  const tag = value.replace(/_/g, "-");
   const lowerTag = tag.toLowerCase();
   if (lowerTag === "id" || lowerTag === "in" || lowerTag.startsWith("id-") || lowerTag.startsWith("in-")) {
     return "id-ID";
   }
+  if (/^zh-(tw|hk|mo|hant)(-|$)/.test(lowerTag)) return "zh-TW";
   const language = lowerTag.split("-")[0];
-  return localeOptions.some((option) => option.code === language) ? language : "en";
+  return localeOptions.some((option) => option.code === language) ? language : null;
+}
+
+function normalizeLocale(value) {
+  return supportedLocale(value) || "en";
 }
 
 function getSelectedLocale() {
+  const requestedLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang"));
+  if (requestedLocale) {
+    window.localStorage.setItem(storageKey, requestedLocale);
+    return requestedLocale;
+  }
   const savedLocale = window.localStorage.getItem(storageKey);
   if (savedLocale) return normalizeLocale(savedLocale);
   for (const language of navigator.languages || [navigator.language]) {
-    const locale = normalizeLocale(language);
-    if (locale !== "en") return locale;
+    const locale = supportedLocale(language);
+    if (locale) return locale;
   }
   return "en";
 }
@@ -1013,6 +1105,9 @@ function setupLanguageSelector() {
     select.value = selectedLocale;
     select.addEventListener("change", () => {
       window.localStorage.setItem(storageKey, select.value);
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", select.value);
+      window.history.replaceState(null, "", url);
       applyLocale(select.value);
     });
   });
@@ -1044,5 +1139,4 @@ function bindCopyRuleUrl(button, label) {
 
 setupRuleLinks();
 setupLanguageSelector();
-bindCopyRuleUrl(document.querySelector("#copyRuleUrl"), document.querySelector("#copyLabel"));
 bindCopyRuleUrl(document.querySelector("#copyRuleUrlPrimary"), document.querySelector("#copyPrimaryLabel"));

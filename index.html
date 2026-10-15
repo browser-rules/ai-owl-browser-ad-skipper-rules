@@ -32,24 +32,29 @@
   <body>
     <main class="container">
       <header class="header" aria-labelledby="page-title">
-        <div class="badge">
-          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M12 3 5 6v5c0 4.2 2.7 8.1 7 10 4.3-1.9 7-5.8 7-10V6l-7-3Z" />
-            <path d="m9 12 2 2 4-5" />
-          </svg>
-          <span data-i18n="home.badge">Public JSON Rule Subscription</span>
+        <div class="header-tools">
+          <div class="language-control">
+            <label for="languageSelect" data-i18n="language.label">Language</label>
+            <select id="languageSelect" aria-label="Language"></select>
+          </div>
         </div>
         <h1 id="page-title" class="title" data-i18n="home.title">Ad Skipper Automation Rules</h1>
+        <div class="header-action">
+          <button id="copyRuleUrlPrimary" class="btn btn-primary" type="button">
+            <svg class="icon-small" aria-hidden="true" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="10" height="10" rx="2" />
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </svg>
+            <span id="copyPrimaryLabel" data-i18n="action.copyRuleUrl">Copy link to import rules</span>
+          </button>
+          <p class="action-hint" data-i18n="home.directBody">After copying, return to Blink Browser to import the rule link.</p>
+        </div>
         <p class="subtitle" data-i18n="home.subtitle">
           Copy one public rule subscription URL, paste it into Blink Browser's Ad Skipper import dialog,
           and let Blink Browser help you complete repetitive skip, close, dismiss, and consent actions
           locally on your device. The rules are user-managed and no screen content or personal
           information is uploaded to the cloud.
         </p>
-        <div class="language-control">
-          <label for="languageSelect" data-i18n="language.label">Language</label>
-          <select id="languageSelect" aria-label="Language"></select>
-        </div>
         <nav class="page-nav" aria-label="Rule documentation">
           <a href="import-guide.html" data-i18n="nav.import">Import guide</a>
           <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
@@ -73,22 +78,8 @@
           </p>
           <div class="code-box" aria-label="Rule JSON subscription URL">
             <span class="code-text" data-rule-url>https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/browser-ad-skipper-rules.json</span>
-            <button id="copyRuleUrl" class="copy-btn" type="button">
-              <svg class="icon-small" aria-hidden="true" viewBox="0 0 24 24">
-                <rect x="9" y="9" width="10" height="10" rx="2" />
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-              </svg>
-              <span id="copyLabel" data-i18n="action.copy">Copy</span>
-            </button>
           </div>
           <div class="btn-group">
-            <button id="copyRuleUrlPrimary" class="btn btn-primary" type="button">
-              <svg class="icon-small" aria-hidden="true" viewBox="0 0 24 24">
-                <rect x="9" y="9" width="10" height="10" rx="2" />
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-              </svg>
-              <span id="copyPrimaryLabel" data-i18n="action.copyRuleUrl">Copy Rule URL</span>
-            </button>
             <a class="btn btn-secondary" data-rule-href href="rules/browser-ad-skipper-rules.json" data-i18n="action.openJson">
               Open JSON
             </a>
@@ -121,7 +112,7 @@
         <div class="info-grid spaced-grid">
           <article class="info-item">
             <h3 data-i18n="home.directTitle">Direct subscription</h3>
-            <p data-i18n="home.directBody">Copy the JSON URL from the top of this page and paste it into Blink Browser.</p>
+            <p data-i18n="home.directBody">After copying, return to Blink Browser to import the rule link.</p>
           </article>
           <article class="info-item">
             <h3 data-i18n="home.docsTitle">Documentation pages</h3>
