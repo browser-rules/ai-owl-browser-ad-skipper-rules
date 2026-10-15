@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "browser-ad-skipper-rules",
-  "name": "Browser Ad Skipper Rules",
-  "version": 7,
-  "author": "Browser",
+  "name": "Ad Skipper Automation Rules",
+  "version": 8,
+  "author": "Blink Browser",
   "updateUrl": "",
   "supportUri": "",
   "appRules": [
@@ -11794,7 +11794,9 @@
         "inmobi_skip_img",
         "skipBtnImg",
         "ecCloseBtn",
-        "closeBtnImg"
+        "closeBtnImg",
+        "skip-close",
+        "skip-btn"
       ],
       "actionKeywords": [
         "close",
@@ -12715,7 +12717,9 @@
       "inmobi_skip_img",
       "skipBtnImg",
       "ecCloseBtn",
-      "closeBtnImg"
+      "closeBtnImg",
+      "skip-close",
+      "skip-btn"
     ],
     "sdkActivityHints": [
       "com.google.android.gms.ads.AdActivity",
