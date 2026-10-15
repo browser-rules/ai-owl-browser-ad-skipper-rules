@@ -31,7 +31,7 @@ body {
   background-attachment: fixed;
   color: var(--text-main);
   font-family:
-    Inter, -apple-system, BlinkMacSystemFont, "SF Pro SC", "Helvetica Neue", Arial, sans-serif;
+    Inter, -apple-system, BlinkMacSystemFont, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   padding: 40px 20px;
 }
 
@@ -108,6 +108,42 @@ button:focus-visible {
   margin-top: 22px;
 }
 
+.language-control {
+  width: min(280px, 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  padding: 8px 10px 8px 12px;
+}
+
+.page-language {
+  margin: 0 0 16px;
+}
+
+.language-control label {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.language-control select {
+  min-width: 0;
+  flex: 1 1 auto;
+  border: 0;
+  border-radius: 6px;
+  background: var(--surface-deep);
+  color: var(--text-main);
+  font: inherit;
+  font-size: 13px;
+  padding: 7px 8px;
+}
+
 .page-nav a {
   min-height: 34px;
   display: inline-flex;
@@ -178,12 +214,12 @@ button:focus-visible {
 
 .code-text {
   min-width: 0;
-  overflow: hidden;
+  overflow: visible;
   color: #e4e4e7;
   font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   font-size: 14px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .copy-btn {
@@ -533,6 +569,26 @@ button:focus-visible {
   white-space: nowrap;
 }
 
+[dir="rtl"] .file-link {
+  text-align: left;
+}
+
+[dir="rtl"] .timeline-item {
+  grid-template-columns: minmax(0, 1fr) 36px;
+}
+
+[dir="rtl"] .timeline-item .step-num {
+  order: 2;
+}
+
+[dir="rtl"] .breadcrumb,
+[dir="rtl"] .card-title,
+[dir="rtl"] .badge,
+[dir="rtl"] .btn,
+[dir="rtl"] .copy-btn {
+  direction: rtl;
+}
+
 .icon,
 .icon-small {
   flex: 0 0 auto;
@@ -706,23 +762,62 @@ strong {
 @media (max-width: 760px) {
   body {
     align-items: flex-start;
-    padding: 28px 16px;
+    background-attachment: scroll;
+    padding: 20px 12px;
   }
 
   .header {
+    text-align: left;
     margin-bottom: 28px;
   }
 
+  [dir="rtl"] .header {
+    text-align: right;
+  }
+
   .title {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .subtitle {
     font-size: 14px;
+    margin-inline: 0;
   }
 
   .card {
+    margin-bottom: 16px;
+    padding: 18px;
+  }
+
+  .article-card {
     padding: 20px;
+  }
+
+  .article-title {
+    font-size: 30px;
+  }
+
+  .article-lead {
+    font-size: 15px;
+  }
+
+  .page-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  [dir="rtl"] .page-nav {
+    justify-content: flex-end;
+  }
+
+  .page-nav a {
+    flex: 0 0 auto;
+  }
+
+  .language-control {
+    width: 100%;
+    display: flex;
   }
 
   .split-card {
@@ -750,6 +845,7 @@ strong {
   .file-item {
     align-items: stretch;
     flex-direction: column;
+    gap: 12px;
   }
 
   .copy-btn,
@@ -775,8 +871,46 @@ strong {
   .file-link {
     text-align: left;
     white-space: normal;
+    overflow-wrap: anywhere;
   }
 
+  [dir="rtl"] .file-link {
+    text-align: right;
+  }
+
+  .timeline-item {
+    grid-template-columns: 30px minmax(0, 1fr);
+  }
+
+  [dir="rtl"] .timeline-item {
+    grid-template-columns: minmax(0, 1fr) 30px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .badge {
+    width: 100%;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .title,
+  .article-title {
+    font-size: 26px;
+  }
+
+  .card-title {
+    align-items: flex-start;
+    font-size: 17px;
+  }
+
+  .quick-facts,
+  .step-item,
+  .info-item,
+  .language-grid article {
+    padding: 16px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

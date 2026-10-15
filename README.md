@@ -1,11 +1,11 @@
-# AI Owl Browser & Ad Skipper Automation Rules
+# Ad Skipper Automation Rules
 
-Public JSON rule subscription for AI Owl Browser users. Search for the exact title
-`AI Owl Browser Ad Skipper Automation Rules` to find this page again from Google.
+Public JSON rule subscription for Blink Browser users. Search for
+`Blink Browser Ad Skipper Automation Rules` to find this page again from Google.
 
 ## Primary Import URL
 
-Copy this URL and paste it into Browser's Ad Skipper import dialog:
+Copy this URL and paste it into Blink Browser's Ad Skipper import dialog:
 
 ```text
 https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/browser-ad-skipper-rules.json
@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/browser-rules/ai-owl-browser-ad-skipper-rules/
 
 ## How to Import
 
-1. Open AI Owl Browser.
+1. Open Blink Browser.
 2. Switch to the Ad Skipper tab.
 3. Tap Import configuration.
 4. Paste the rule subscription URL.
@@ -35,7 +35,12 @@ future refreshes tied to the same public endpoint.
 - Privacy: https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/privacy.html
 - Rule JSON format: https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rule-json.html
 - FAQ: https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/faq.html
-- 中文说明: https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/zh-cn.html
+
+## Supported Site Languages
+
+The hosted documentation supports the same release languages as Blink Browser:
+English, Hindi, Urdu, Bengali, Arabic, Indonesian, Malay, French, German, Spanish, Portuguese,
+Japanese, and Korean.
 
 ## Privacy
 
@@ -60,6 +65,3 @@ The same rule subscription is also published here:
 ```text
 https://browser-ad-skipper-rules.groups-candlelight.workers.dev/rules/browser-ad-skipper-rules.json
 ```
-
-中文说明：优先复制上面的规则订阅 URL，到 Browser 的 Ad Skipper 导入弹窗中粘贴。下载 JSON
-文件只作为备用方案。

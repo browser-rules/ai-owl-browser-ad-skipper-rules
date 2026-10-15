@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI Owl Browser Ad Skipper Rule JSON Format</title>
+    <title>Blink Browser Ad Skipper Rule JSON Format</title>
     <meta
       name="description"
-      content="Overview of the AI Owl Browser Ad Skipper rule JSON subscription format, manifest metadata, import URL, and user-managed automation rule structure."
+      content="Overview of the Blink Browser Ad Skipper rule JSON subscription format, manifest metadata, import URL, and user-managed automation rule structure."
     />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rule-json.html" />
@@ -15,39 +15,43 @@
   <body>
     <main class="container page-container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">AI Owl Browser Automation Rules</a>
+        <a href="https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/">Blink Browser Automation Rules</a>
         <span>/</span>
-        <span>Rule JSON</span>
+        <span data-i18n="nav.rule">Rule format</span>
       </nav>
+      <div class="language-control page-language">
+        <label for="languageSelect" data-i18n="language.label">Language</label>
+        <select id="languageSelect" aria-label="Language"></select>
+      </div>
       <article class="card article-card">
-        <h1 class="article-title">Rule JSON Format</h1>
-        <p class="article-lead">
-          The public subscription is a JSON document that Browser can fetch, validate, and import
+        <h1 class="article-title" data-i18n="rule.title">Rule JSON Format</h1>
+        <p class="article-lead" data-i18n="rule.lead">
+          The public subscription is a JSON document that Blink Browser can fetch, validate, and import
           into the local Ad Skipper rule manager.
         </p>
         <div class="file-list article-files">
           <div class="file-item">
-            <div class="file-info"><span>Rule subscription</span></div>
-            <a class="file-link" id="openRuleJson" href="rules/browser-ad-skipper-rules.json">
+            <div class="file-info"><span data-i18n="rule.subscription">Rule subscription</span></div>
+            <a class="file-link" data-rule-href href="rules/browser-ad-skipper-rules.json">
               /rules/browser-ad-skipper-rules.json
             </a>
           </div>
           <div class="file-item">
-            <div class="file-info"><span>Manifest metadata</span></div>
+            <div class="file-info"><span data-i18n="rule.manifest">Manifest metadata</span></div>
             <a class="file-link" href="rules/manifest.json">/rules/manifest.json</a>
           </div>
         </div>
         <section class="article-section">
-          <h2>What the JSON provides</h2>
-          <p>
-            The JSON contains rule subscription metadata and user-managed automation entries. Browser
+          <h2 data-i18n="rule.providesTitle">What the JSON provides</h2>
+          <p data-i18n="rule.providesBody">
+            The JSON contains rule subscription metadata and user-managed automation entries. Blink Browser
             decides whether a rule is valid, visible in the rule manager, and eligible for local
             execution after the user enables Ad Skipper.
           </p>
         </section>
         <section class="article-section">
-          <h2>Recommended import URL</h2>
-          <p>
+          <h2 data-i18n="rule.recommendedTitle">Recommended import URL</h2>
+          <p data-i18n="rule.recommendedBody">
             Use the hosted URL instead of a downloaded file when possible. A stable URL gives users
             a repeatable source for future refreshes.
           </p>
