@@ -1,11 +1,11 @@
-# Ad Skipper Automation Rules
+# Ad Blocker & Video Downloader Ad Skipper Rules
 
-Public JSON rule subscription for Blink Browser users. Search for
-`Blink Browser Ad Skipper Automation Rules` to find this page again from Google.
+Public JSON rule subscription for Ad Blocker & Video Downloader users. Search for
+`Ad Blocker & Video Downloader Ad Skipper Rules` to find this page again from Google.
 
 ## Primary Import URL
 
-Copy this URL and paste it into Blink Browser's Ad Skipper import dialog:
+Copy this URL and paste it into Ad Blocker & Video Downloader's Ad Skipper import dialog:
 
 ```text
 https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/browser-ad-skipper-rules.json
@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/browser-rules/ai-owl-browser-ad-skipper-rules/
 
 ## How to Import
 
-1. Open Blink Browser.
+1. Open Ad Blocker & Video Downloader.
 2. Switch to the Ad Skipper tab.
 3. Tap Import configuration.
 4. Paste the rule subscription URL.
@@ -38,7 +38,7 @@ future refreshes tied to the same public endpoint.
 
 ## Supported Site Languages
 
-The hosted documentation supports the same release languages as Blink Browser:
+The hosted documentation supports the same release languages as Ad Blocker & Video Downloader:
 English, Hindi, Urdu, Bengali, Arabic, Indonesian, Malay, French, German, Spanish, Portuguese,
 Japanese, and Korean.
 
