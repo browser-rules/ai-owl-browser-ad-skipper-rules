@@ -1,9 +1,9 @@
 {
   "id": "browser-ad-skipper-rules",
   "name": "Ad Skipper Automation Rules",
-  "version": 8,
-  "updatedAt": "2026-10-15T00:00:00.000Z",
+  "version": 9,
+  "updatedAt": "2026-11-02T03:35:48.000Z",
   "ruleUrl": "https://browser-rules.github.io/ai-owl-browser-ad-skipper-rules/rules/browser-ad-skipper-rules.json",
-  "sha256": "e7a1d6d5764e3e7847fc121898ec596fcefe781a30639e86ad33409ecccf07cb",
-  "bytes": 372110
+  "sha256": "845dc721edc2ebd24181166165c3c9e79ec693b006dc998b9f2bff0247dada5e",
+  "bytes": 370652
 }
